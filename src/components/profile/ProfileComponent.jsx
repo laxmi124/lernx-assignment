@@ -2,8 +2,7 @@ import { useState } from "react";
 import { UserGroupIcon } from "@heroicons/react/24/outline";
 import { Switch } from "@headlessui/react";
 
-const demoImage1 =
-  "https://alumni.cusat.ac.in/wp-content/themes/cera/assets/images/avatars/user-avatar.png";
+const demoImage1 = "https://wallpapercave.com/wp/wp9275383.jpg";
 
 const ProfileComponent = () => {
   const [enabled, setEnabled] = useState(true);
@@ -17,7 +16,7 @@ const ProfileComponent = () => {
           <img
             src={demoImage1}
             alt="avatar"
-            className="w-24 h-24 rounded-full"
+            className="w-24 h-24 rounded-full object-cover"
           />
         </div>
       </div>
